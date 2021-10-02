@@ -1,24 +1,30 @@
 import React from 'react';
-import logo from './logo.svg';
+import useLocalStorage from "use-local-storage";
 import './App.css';
 
-function App() {
+const Square = () => {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className='square'>
+      Le Square
+    </div>
+  )
+}
+
+function App() {
+  const [theme, setTheme] = useLocalStorage('theme', 'light');
+
+  const switchTheme = () => {
+    const newTheme = theme === 'light' ? 'dark' : 'light';
+    setTheme(newTheme);
+  }
+
+  return (
+    <div className="app" data-theme={theme}>
+      <span>BOOP</span>
+      <button onClick={switchTheme}>
+        SWITCH THEME
+      </button>
+      <Square/>
     </div>
   );
 }
