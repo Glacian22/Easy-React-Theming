@@ -1,14 +1,7 @@
 import React from 'react';
 import useLocalStorage from "use-local-storage";
-import './App.css';
+import './App.scoped.css';
 
-const Square = () => {
-  return (
-    <div className='square'>
-      Le Square
-    </div>
-  )
-}
 
 function App() {
   const [theme, setTheme] = useLocalStorage('theme', 'light');
@@ -24,7 +17,6 @@ function App() {
       <button onClick={switchTheme}>
         SWITCH THEME
       </button>
-      <Square/>
     </div>
   );
 }
