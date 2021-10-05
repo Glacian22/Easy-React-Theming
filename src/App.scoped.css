@@ -1,6 +1,6 @@
 .app {
-  color: var(--primary);
-  background-color: var(--secondary);
+  color: var(--text-primary);
+  background-color: var(--background);
   height: 100vh;
-  transition: all .75s;
+  transition: all .5s;
 }

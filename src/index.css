@@ -13,11 +13,15 @@ code {
 }
 
 :root {
-  --primary: white;
-  --secondary: black;
+  --background: white;
+  --text-primary: black;
+  --text-secondary: royalblue;
+  --accent: purple;
 }
 
 [data-theme='dark'] {
-  --primary: black;
-  --secondary: white;
+  --background: black;
+  --text-primary: white;
+  --text-secondary: aqua;
+  --accent: darkblue;
 }

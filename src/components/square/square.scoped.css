@@ -1,0 +1,15 @@
+.square {
+  color: var(--background);
+  background-color: var(--text-secondary);
+  border: 12px solid var(--accent);
+  width: 250px;
+  height: 250px;
+  margin: auto;
+  text-align: center;
+  vertical-align: text-bottom;
+  transition: all .5s
+}
+
+#square-text {
+  vertical-align: text-bottom;
+}

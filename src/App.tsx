@@ -1,4 +1,5 @@
 import React from 'react';
+import Square from './components/square/Square';
 import useLocalStorage from "use-local-storage";
 import './App.scoped.css';
 
@@ -17,6 +18,7 @@ function App() {
       <button onClick={switchTheme}>
         SWITCH THEME
       </button>
+      <Square />
     </div>
   );
 }
