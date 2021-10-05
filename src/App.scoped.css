@@ -6,7 +6,11 @@
 }
 
 button {
-  color: var(--background);
-  background: var(--text-secondary);
+  color: var(--text-primary);
+  background-color: var(--background);
+  border: 2px var(--text-primary) solid;
   transition: all .5s;
+  position: absolute;
+  right: 20px;
+  top: 20px
 }

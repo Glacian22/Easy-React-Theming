@@ -14,7 +14,7 @@ function App() {
 
   return (
     <div className="app" data-theme={theme}>
-      <span>BOOP</span>
+      <span>Easy Darkmode and Themes in React</span>
       <button onClick={switchTheme}>
         SWITCH THEME
       </button>
