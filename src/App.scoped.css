@@ -4,3 +4,9 @@
   height: 100vh;
   transition: all .5s;
 }
+
+button {
+  color: var(--background);
+  background: var(--text-secondary);
+  transition: all .5s;
+}

@@ -2,14 +2,14 @@
   color: var(--background);
   background-color: var(--text-secondary);
   border: 12px solid var(--accent);
-  width: 250px;
-  height: 250px;
   margin: auto;
   text-align: center;
   vertical-align: text-bottom;
-  transition: all .5s
+  transition: all .5s;
+  width: 300px;
+  height: 300px;
 }
 
 #square-text {
-  vertical-align: text-bottom;
+  /* padding: 250px */
 }
