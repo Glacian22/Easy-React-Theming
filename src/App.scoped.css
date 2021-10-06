@@ -2,9 +2,10 @@
   color: var(--text-primary);
   background-color: var(--background);
   height: 100vh;
-  transition: all .5s;
   font-size: large;
   font-weight: bold;
+  padding: 20px;
+  transition: all .5s;
 }
 
 button {
@@ -12,7 +13,5 @@ button {
   background-color: var(--background);
   border: 2px var(--text-primary) solid;
   transition: all .5s;
-  position: absolute;
-  right: 20px;
-  top: 20px
+  float: right
 }
