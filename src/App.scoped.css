@@ -3,6 +3,8 @@
   background-color: var(--background);
   height: 100vh;
   transition: all .5s;
+  font-size: large;
+  font-weight: bold;
 }
 
 button {
