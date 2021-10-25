@@ -1,10 +1,10 @@
 .app {
   color: var(--text-primary);
   background-color: var(--background);
-  height: 100vh;
+  padding: 20px;
+  height: calc(100vh - 40px);
   font-size: large;
   font-weight: bold;
-  padding: 20px;
   transition: all .5s;
 }
 
@@ -12,6 +12,6 @@ button {
   color: var(--text-primary);
   background-color: var(--background);
   border: 2px var(--text-primary) solid;
+  float: right;
   transition: all .5s;
-  float: right
 }

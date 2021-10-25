@@ -1,11 +1,12 @@
 import React from 'react';
 import Square from './components/square/Square';
-import useLocalStorage from "use-local-storage";
+import useLocalStorage from 'use-local-storage';
 import './App.scoped.css';
 
 
 function App() {
-  const [theme, setTheme] = useLocalStorage('theme', 'light');
+  const defaultDark = window.matchMedia('(prefers-color-scheme: dark)').matches;
+  const [theme, setTheme] = useLocalStorage('theme', defaultDark ? 'dark' : 'light');
 
   const switchTheme = () => {
     const newTheme = theme === 'light' ? 'dark' : 'light';
@@ -16,7 +17,7 @@ function App() {
     <div className="app" data-theme={theme}>
       <span>Easy Darkmode and Themes in React</span>
       <button onClick={switchTheme}>
-        SWITCH THEME
+        Switch to {theme === 'light' ? 'Dark' : 'Light'} Theme
       </button>
       <Square />
     </div>
